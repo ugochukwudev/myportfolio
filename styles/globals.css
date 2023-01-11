@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "burtons";
+  src: url("../public/Burtons.otf");
+}
+
+@font-face {
+  font-family: Helvetica;
+}
+
+body::-webkit-scrollbar {
+  width: 0 !important;
+}
+body {
+  overflow: -moz-scrollbars-none;
+}
+body {
+  -ms-overflow-style: none;
+}
+
+.anim-link {
+  color: #fff;
+  text-decoration: none;
+}
+.anim-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+}
+
+.anim-link::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+}
+..anim-link:hover::after {
+  width: 100%;
+}
+
+.anim-link:hover::before {
+  width: 100%;
+}
