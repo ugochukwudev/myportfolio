@@ -27,25 +27,25 @@ export default function Home() {
     password: "testilodoops",
   });
   const portfolio = [
-    { src: "/../public/first-gig.png", link: "https://techx.com.ng" },
+    { src: "/first-gig.png", link: "https://techx.com.ng" },
     {
-      src: "/../public/second-gig.png",
+      src: "/second-gig.png",
       link: "https://techopenai.vercel.app/",
     },
     {
-      src: "/../public/third-gig.png",
+      src: "/third-gig.png",
       link: "https://hiddenme.vercel.app/",
     },
     {
-      src: "/../public/fourth-gig.png",
+      src: "/fourth-gig.png",
       link: "https://waitlist-ten.vercel.app/",
     },
     {
-      src: "/../public/fifth-gig.png",
+      src: "/fifth-gig.png",
       link: "https://emekasportfolio.vercel.app/",
     },
     {
-      src: "/../public/sixth-gig.png",
+      src: "/sixth-gig.png",
       link: "https://social-ui-seven.vercel.app/",
     },
   ];
