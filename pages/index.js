@@ -7,6 +7,7 @@ import {
   AiFillYoutube,
   AiFillFacebook,
   AiOutlineWhatsApp,
+  AiFillGithub,
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState, useEffect } from "react";
@@ -19,7 +20,7 @@ import Image from "next/image";
 import prof from "../public/img.jpeg";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [user, setUser] = useState({
     profileImg: "",
     username: "testopod",
@@ -128,6 +129,13 @@ export default function Home() {
               target="_blank"
             >
               <AiFillYoutube className="cursor-pointer transition-[color] duration-[400ms] w-[50px] h-[50px] hover:text-teal-600" />
+            </a>
+            <a
+              rel="noreferrer"
+              href="https://github.com/ugochukwudev"
+              target="_blank"
+            >
+              <AiFillGithub className="cursor-pointer transition-[color] duration-[400ms] w-[50px] h-[50px] hover:text-teal-600" />
             </a>
           </div>
           <div className="lg:mx-auto cursor-pointer bg-gradient-to-b from-teal-500 rounded-full w-[50vw] ml-auto mr-auto h-[50vw] relative overflow-hidden mt-20 md:h-96 md:w-96">
