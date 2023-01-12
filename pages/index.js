@@ -247,7 +247,7 @@ export default function Home() {
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               I offer from a wide range of services, including programming ,
-              debugging etc.
+              debugging, web scrapping , bots etc.
             </p>
           </div>
           <div className="flex flex-col gap-4 md:gap-10 md:py-10 lg:flex-row lg:flex-wrap">
