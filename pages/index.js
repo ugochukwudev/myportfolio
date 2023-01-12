@@ -28,26 +28,41 @@ export default function Home() {
     password: "testilodoops",
   });
   const portfolio = [
-    { src: "/first-gig.png", link: "https://techx.com.ng" },
+    {
+      src: "/first-gig.png",
+      link: "https://techx.com.ng",
+      name: "TechX",
+      desc: "A webPage where you read tech news",
+    },
     {
       src: "/second-gig.png",
       link: "https://techopenai.vercel.app/",
+      name: "Bro AI",
+      desc: "A chat gpt clone that can answer questions",
     },
     {
       src: "/third-gig.png",
       link: "https://hiddenme.vercel.app/",
+      name: "Hidden Me",
+      desc: "A webPage where you make  stories of your day ",
     },
     {
       src: "/fourth-gig.png",
       link: "https://waitlist-ten.vercel.app/",
+      name: "Waitlist",
+      desc: "A webPage showing a proffesional waitlist ui",
     },
     {
       src: "/fifth-gig.png",
       link: "https://emekasportfolio.vercel.app/",
+      name: "Portfolio",
+      desc: "A webPage I built for a client to showcase his work",
     },
     {
       src: "/sixth-gig.png",
       link: "https://social-ui-seven.vercel.app/",
+      name: "Social UI",
+      desc: "A social media website ui ",
     },
   ];
   return (
@@ -97,8 +112,7 @@ export default function Home() {
           <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
             {`Hardworking and enthusiastic student working towards a junior role
             in software development. Seeking to use my knowledge and skills to
-            effectively serve your company in a junior-role (frontend or backend)
-            position. Dedicated and committed to becoming a dependable and
+            effectively serve your company in a junior-role (frontend/backend). Dedicated and committed to becoming a dependable and
             valuable team member.`}
           </p>
           <div className="text-5xl flex justify-center gap-4 py-3 text-gray-600 dark:text-gray-400">
@@ -239,23 +253,36 @@ export default function Home() {
           <div className="flex flex-col gap-4 md:gap-10 md:py-10 lg:flex-row lg:flex-wrap">
             {portfolio.map((item, i) => {
               return (
-                <div key={i} className="basis-1/3 flex-1 w-[full] h-fit ">
-                  <a
-                    rel="noreferrer"
-                    href={item?.link}
-                    target="_blank"
-                    className="decoration-0 "
-                  >
-                    <Image
-                      className="rounded-[14px] "
-                      objectFit="contain"
-                      width={"100%"}
-                      height={"50%"}
-                      layout="responsive"
-                      src={item?.src}
-                      alt={item?.link}
-                    />
-                  </a>
+                <div
+                  key={i}
+                  className="basis-1/3 relative group  flex-1 w-[full] h-fit "
+                >
+                  <Image
+                    className="rounded-[14px] "
+                    objectFit="contain"
+                    width={"100%"}
+                    height={"50%"}
+                    layout="responsive"
+                    src={item?.src}
+                    alt={item?.link}
+                  />
+
+                  <div className="bg-[rgba(31,41,55,0.8)] md:bg-[rgba(31,41,55,1)]  group-hover:opacity-100 transition-[opacity] duration-[1000ms] opacity-0  cursor-pointer  px-6 py-1 text-white absolute w-full h-full md:h-[60%] top-0 md:top-[40%]">
+                    <p className="font-semibold text-teal-600">{item?.name}</p>
+                    <p className="font-normal leading-[1.5] mb-1">
+                      {item?.desc}
+                    </p>
+                    <a
+                      rel="noreferrer"
+                      href={item?.link}
+                      target="_blank"
+                      className="decoration-0 "
+                    >
+                      <button className="px-6 py-2 rounded-[3px] bg-teal-600">
+                        View
+                      </button>
+                    </a>
+                  </div>
                 </div>
               );
             })}
