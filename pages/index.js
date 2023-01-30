@@ -121,7 +121,7 @@ export default function Home() {
           }}
           ref={off}
           transition={{ ease: "easeOut", duration: 4 }}
-          className="bg-white absolute h-[100vh] w-[100vw] z-[99999999999] "
+          className="bg-white absolute h-[110vh] w-[100vw] z-[99999999999] "
         ></motion.div>
       )}
       {hideElements && (
