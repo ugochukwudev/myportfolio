@@ -129,7 +129,7 @@ export default function Home() {
           variants={ball}
           initial="hidden"
           animate="visible"
-          transition={{ ease: "easeOut", duration: 2, delay: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
           className="bg-gray-900 absolute  z-[99999999999999999999999999]"
         ></motion.div>
       )}
