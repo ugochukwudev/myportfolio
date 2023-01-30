@@ -113,7 +113,7 @@ export default function Home() {
   const off = useRef();
 
   return (
-    <>
+    <div className="overflow-x-hidden">
       {hideElements && (
         <motion.div
           animate={{
@@ -455,6 +455,6 @@ export default function Home() {
           </div>
         </main>
       </div>
-    </>
+    </div>
   );
 }
