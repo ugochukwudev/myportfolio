@@ -130,11 +130,13 @@ export default function Home() {
           initial="hidden"
           animate="visible"
           transition={{ ease: "easeOut", duration: 2 }}
-          className="bg-gray-900 absolute  z-[99999999999999999999999999]"
+          className="bg-gray-900 absolute  z-[99999999999999999999]"
         ></motion.div>
       )}
 
-      <div className={`${darkMode ? "dark" : ""} `}>
+      <div
+        className={`${darkMode ? "dark" : ""} z-[9999999999999999999999999]`}
+      >
         <Head>
           <title>my portfolio</title>
           <meta name="description" content="You're welcome to my portfolio " />
