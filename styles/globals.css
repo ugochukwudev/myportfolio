@@ -86,24 +86,3 @@ body {
     height: 100vh;
   }
 }
-
-.animate-circle {
-  transition: all 1s linear;
-  animation: circle 3s ease-out 0s infinite normal none running;
-  top: 25vh;
-  left: 25vw;
-  border-radius: 1000px;
-  width: 50vw;
-  height: 100vh;
-}
-
-@keyframes circle {
-  from {
-    top: 45vh;
-    left: 48vw;
-    border-radius: 1000px;
-    width: 5vw;
-    height: 10vh;
-    opacity: 0;
-  }
-}
