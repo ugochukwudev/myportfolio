@@ -38,6 +38,12 @@ export default function Home() {
       desc: "A webPage where you read tech news",
     },
     {
+      src: "/seventh-gig.png",
+      link: "https://www.arewabooks.com/",
+      name: "Arewabooks",
+      desc: "A site where you read books written in the hausa language",
+    },
+    {
       src: "/second-gig.png",
       link: "https://techopenai.vercel.app/",
       name: "Bro AI",
@@ -48,6 +54,18 @@ export default function Home() {
       link: "https://hiddenme.vercel.app/",
       name: "Hidden Me",
       desc: "A webPage where you make  stories of your day ",
+    },
+    {
+      src: "/eight-gig.png",
+      link: "https://rumour.vercel.app/",
+      name: "Rumour",
+      desc: "A Blog where you here the latest gist in the country. built with next js 13 and sanity.io",
+    },
+    {
+      src: "/ninth-gig.png",
+      link: "https://playjor.com",
+      name: "Playjor",
+      desc: "A Social media Application where you meet and interact with the world",
     },
     {
       src: "/fourth-gig.png",
@@ -66,6 +84,12 @@ export default function Home() {
       link: "https://social-ui-seven.vercel.app/",
       name: "Social UI",
       desc: "A social media website ui ",
+    },
+    {
+      src: "/tenth-gig.png",
+      link: "https://bestvoice.vercel.app/",
+      name: "BestVoices",
+      desc: "A landing page I built for a client who was hosting a voice competition...",
     },
   ];
   useEffect(() => {
