@@ -85,11 +85,24 @@ export default function Home() {
       name: "Social UI",
       desc: "A social media website ui ",
     },
+
     {
       src: "/tenth-gig.png",
       link: "https://bestvoice.vercel.app/",
       name: "BestVoices",
       desc: "A landing page I built for a client who was hosting a voice competition...",
+    },
+    {
+      src: "/eleventh.png",
+      link: "https://www.digitalabundance.io",
+      name: "Digital Abundance (Intern)",
+      desc: "Learn how to turn digital skills into money ",
+    },
+    {
+      src: "/twelveth.png",
+      link: "https://payday-clone.vercel.app/",
+      name: "Payday (clone)",
+      desc: "cloning the homepage of a fintech",
     },
   ];
   useEffect(() => {
@@ -279,7 +292,7 @@ export default function Home() {
               <Image
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
-                src={prof}
+                src={"/user.jpeg"}
                 alt="user-image"
                 layout="fill"
                 objectFit="cover"
